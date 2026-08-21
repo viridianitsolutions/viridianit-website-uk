@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Viridian IT Solutions</title>
+
+https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap
+
+<style>
+:root{
+    --bg:#ffffff;
+    --text:#222222;
+    --secondary:#666666;
+    --card:#ffffff;
+    --border:#e5e5e5;
+    --accent:#138F6A;
+    --accent-hover:#0F766E;
+    --contact-bg:#f8f9fa;
+}
+
+.dark-mode{
+    --bg:#111827;
+    --text:#F3F4F6;
+    --secondary:#9CA3AF;
+    --card:#1F2937;
+    --border:#374151;
+    --accent:#2DD4A3;
+    --accent-hover:#34D399;
+    --contact-bg:#1F2937;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Inter',sans-serif;
+    background:var(--bg);
+    color:var(--text);
+    line-height:1.6;
+    transition:all .3s ease;
+}
+
+.container{
+    width:90%;
+    max-width:1100px;
+    margin:auto;
+}
+
+header{
+    padding:120px 0;
+    text-align:center;
+}
+
+header h1{
+    font-size:3rem;
+    font-weight:700;
+    margin-bottom:15px;
+}
+
+header p{
+    max-width:700px;
+    margin:auto;
+    color:var(--secondary);
+    font-size:1.1rem;
+}
+
+#theme-toggle{
+    margin-top:30px;
+    background:var(--accent);
+    color:#fff;
+    border:none;
+    padding:12px 24px;
+    border-radius:10px;
+    cursor:pointer;
+    font-weight:600;
+    transition:.3s;
+}
+
+#theme-toggle:hover{
+    background:var(--accent-hover);
+}
+
+section{
+    padding:80px 0;
+}
+
+h2{
+    font-size:2rem;
+    margin-bottom:30px;
+}
+
+.services{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:var(--card);
+    border:1px solid var(--border);
+    border-radius:14px;
+    padding:25px;
+    transition:.3s ease;
+}
+
+.card:hover{
+    transform:translateY(-4px);
+    border-color:var(--accent);
+}
+
+.card h3{
+    color:var(--accent);
+    margin-bottom:10px;
+}
+
+.card p{
+    color:var(--secondary);
+}
+
+.location p{
+    max-width:800px;
+    color:var(--secondary);
+}
+
+.contact{
+    background:var(--contact-bg);
+    padding:40px;
+    border-radius:16px;
+}
+
+.contact a{
+    color:var(--accent);
+    text-decoration:none;
+}
+
+.contact a:hover{
+    text-decoration:underline;
+}
+
+.contact-form{
+    margin-top:30px;
+}
+
+.contact-form input,
+.contact-form textarea{
+    width:100%;
+    padding:14px;
+    margin-bottom:15px;
+    border:1px solid var(--border);
+    border-radius:10px;
+    background:var(--bg);
+    color:var(--text);
+    font-family:inherit;
+}
+
+.contact-form button{
+    background:var(--accent);
+    color:white;
+    border:none;
+    padding:14px 24px;
+    border-radius:10px;
+    cursor:pointer;
+    font-weight:600;
+    transition:.3s;
+}
+
+.contact-form button:hover{
+    background:var(--accent-hover);
+}
+
+footer{
+    text-align:center;
+    padding:40px 0;
+    border-top:1px solid var(--border);
+    color:var(--secondary);
+}
+
+@media (max-width:768px){
+    header h1{
+        font-size:2.2rem;
+    }
+
+    h2{
+        font-size:1.8rem;
+    }
+}
+</style>
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <h1>Viridian IT Solutions</h1>
+
+        <p>
+            Reliable IT services and technology solutions for businesses across
+            Greater Manchester and the UK. Helping organisations stay secure,
+            productive and connected.
+        </p>
+
+        <button id="theme-toggle">🌙 Dark Mode</button>
+    </div>
+</header>
+
+<section id="services">
+    <div class="container">
+
+        <h2>What We Do</h2>
+
+        <div class="services">
+
+            <div class="card">
+                <h3>Managed IT Support</h3>
+                <p>
+                    Proactive monitoring, maintenance and support to keep your
+                    systems running smoothly.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Microsoft 365 Services</h3>
+                <p>
+                    Deployment, administration and optimisation of Microsoft 365
+                    environments.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Cloud Solutions</h3>
+                <p>
+                    Secure cloud services, migrations and modern workplace
+                    solutions.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Cyber Security</h3>
+                <p>
+                    Protecting your business through security monitoring,
+                    best practices and compliance support.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Network Infrastructure</h3>
+                <p>
+                    Reliable wired and wireless networking solutions designed
+                    for performance and growth.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>IT Consultancy</h3>
+                <p>
+                    Strategic technology advice to help your organisation
+                    operate more efficiently and securely.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<section id="location">
+    <div class="container location">
+
+        <h2>Where We're Based</h2>
+
+        <p>
+            Viridian IT Solutions is based in
+            <strong>Greater Manchester</strong>,
+            providing professional IT services and support for businesses
+            across the region and throughout the UK.
+        </p>
+
+    </div>
+</section>
+
+<section id="contact">
+    <div class="container">
+
+        <div class="contact">
+
+            <h2>Contact Us</h2>
+
+            <p><strong>General Enquiries</strong></p>
+            <p>
+                <a href="mailto:hello@viridianit.co.uk">
+                    hello@viridianit.co.uk
+                </a>
+            </p>
+
+            <br>
+
+            <p><strong>IT Support</strong></p>
+            <p>
+                <a href="mailto:support@viridianit.co.uk">
+                    support@viridianit.co.uk
+                </a>
+            </p>
+
+            <form class="contact-form">
+
+                <input
+                    type="text"
+                    placeholder="Your Name"
+                    required
+                >
+
+                <input
+                    type="email"
+                    placeholder="Your Email"
+                    required
+                >
+
+                <textarea
+                    rows="5"
+                    placeholder="How can we help?"
+                    required
+                ></textarea>
+
+                <button type="submit">
+                    Send Enquiry
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        © 2026 Viridian IT Solutions. All Rights Reserved.
+    </div>
+</footer>
+
+<script>
+const toggle = document.getElementById('theme-toggle');
+
+toggle.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+
+    toggle.textContent =
+        document.body.classList.contains('dark-mode')
+        ? '☀️ Light Mode'
+        : '🌙 Dark Mode';
+});
+</script>
+
+</body>
+</html>
